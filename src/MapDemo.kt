@@ -19,6 +19,9 @@ fun main(args: Array<String>) {
     retrieveMap1(m1)
     retrieveMap2(m1)
     println("List: " + m1.toList())
+    // mapValues
+    val m2 = m1.mapValues { "${it.value}@v" }
+    println("After mapValues: $m2")
 }
 
 fun retrieveMap1(m: Map<String, String>) {
