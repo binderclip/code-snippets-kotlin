@@ -22,6 +22,9 @@ fun main(args: Array<String>) {
     // mapValues
     val m2 = m1.mapValues { "${it.value}@v" }
     println("After mapValues: $m2")
+    // list to map
+    val l1 = listOf('A' to 'a', 'B' to 'b')
+    println("List to map:" + l1.associate { it.first to it.second })
 }
 
 fun retrieveMap1(m: Map<String, String>) {
