@@ -1,4 +1,4 @@
-
+package MapSP
 fun main(args: Array<String>) {
     // create
     var m1 : MutableMap<String, String> = HashMap<String, String>()

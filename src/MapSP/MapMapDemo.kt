@@ -1,3 +1,5 @@
+package MapSP
+
 enum class BoardType(val v: Int) {
     TYPE_A(1),
     TYPE_B(2),
@@ -6,9 +8,9 @@ enum class BoardType(val v: Int) {
 
 
 data class BoardStats (
-    val boardId: Long,
-    val boardType: BoardType,
-    val number: Int
+        val boardId: Long,
+        val boardType: BoardType,
+        val number: Int
 )
 
 fun main(args: Array<String>) {

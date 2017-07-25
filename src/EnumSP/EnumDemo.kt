@@ -1,3 +1,5 @@
+package EnumSP
+
 enum class MyEnum(val v: Int) {
     IT_A(1),
     IT_B(2),
@@ -6,4 +8,5 @@ enum class MyEnum(val v: Int) {
 
 fun main(args: Array<String>) {
     MyEnum.values().map { println("$it: ${it.v}") }
+    println(MyEnum.values()[0] == MyEnum.IT_A)  // true
 }
