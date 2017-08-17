@@ -19,12 +19,16 @@ fun listSort() {
     println("l2: $l2")
     val l3 = l1.sortedBy { it.second }
     println("l3: $l3")
+    val l4 = l1.sortedByDescending { it.second }
+    println("l4: $l4")
 
     val ml = mutableListOf(Pair("a", 2), Pair("c", 1), Pair("b", 3))
     println("ml: $ml")
     ml.sortBy { it.first }
     println("ml: $ml")
     ml.sortBy { it.second }
+    println("ml: $ml")
+    ml.sortByDescending { it.second }
     println("ml: $ml")
 }
 
