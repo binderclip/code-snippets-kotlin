@@ -33,7 +33,19 @@ fun listSort() {
 }
 
 
+fun listCombination() {
+    println("=== listCombination ===")
+    val l1 = listOf(1, 2, 3)
+    val l2 = listOf(4, 5, 6)
+    val l3 = l1 + l2
+    println("l1: $l1")
+    println("l2: $l2")
+    println("l3: $l3")
+}
+
+
 fun main(args: Array<String>) {
     listBasicOp()
     listSort()
+    listCombination()
 }

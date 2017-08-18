@@ -22,7 +22,16 @@ fun stringLength() {
 }
 
 
+fun stringToInt() {
+    println("=== stringToInt ===")
+    val s = "123"
+    println("s.toInt(): ${s.toInt()}")
+    // ref: https://stackoverflow.com/questions/19519468/how-to-convert-string-to-long-in-kotlin
+}
+
+
 fun main(args: Array<String>) {
     stringSplit()
     stringLength()
+    stringToInt()
 }
