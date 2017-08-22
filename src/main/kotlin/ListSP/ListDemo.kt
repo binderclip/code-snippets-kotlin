@@ -47,12 +47,17 @@ fun listCombination() {
 fun listWithIndex() {
     println("=== listWithIndex ===")
     val l1 = listOf("a", "b", "c")
-    val l2 = l1.withIndex()
+    val i1 = l1.withIndex()  // Iterable<IndexedValue<T>>
     println("l1: $l1")
-    print("l2:")
-    for (indexedValue in l2) {
+    print("i1:")
+    // for
+    for (indexedValue in i1) {
         print(" ${indexedValue.index}:${indexedValue.value}")
     }
+    println()
+    print("i1:")
+    // map
+    i1.map { print(" ${it.index}:${it.value}") }
     println()
 }
 
