@@ -44,8 +44,22 @@ fun listCombination() {
 }
 
 
+fun listWithIndex() {
+    println("=== listWithIndex ===")
+    val l1 = listOf("a", "b", "c")
+    val l2 = l1.withIndex()
+    println("l1: $l1")
+    print("l2:")
+    for (indexedValue in l2) {
+        print(" ${indexedValue.index}:${indexedValue.value}")
+    }
+    println()
+}
+
+
 fun main(args: Array<String>) {
     listBasicOp()
     listSort()
     listCombination()
+    listWithIndex()
 }
