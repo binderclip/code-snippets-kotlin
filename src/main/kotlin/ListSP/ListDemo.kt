@@ -1,5 +1,15 @@
 package ListSP
 
+
+fun initList() {
+    println("=== initList ===")
+    val myList = listOf(1, 2, 3)
+    val myMList = mutableListOf(4, 5, 6)
+    println(myList)
+    println(myMList)
+}
+
+
 fun listBasicOp() {
     println("=== listBasicOp ===")
     var myList : MutableList<Int> = mutableListOf(1, 2, 3)
@@ -63,6 +73,7 @@ fun listWithIndex() {
 
 
 fun main(args: Array<String>) {
+    initList()
     listBasicOp()
     listSort()
     listCombination()
